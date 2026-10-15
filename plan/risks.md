@@ -1,0 +1,21 @@
+# Risks (condensed from PLAN §10)
+
+IDs referenced by tasks via `risk:`.
+
+- R-01 Frameless transparent resize/snap on WebView2 → prototype first week; custom resize. (P1,P2)
+- R-02 Acrylic/Mica variance + drag lag → build gating, fallback chain, reduce-effects toggle. (P3)
+- R-03 Desktop-level widget undocumented → spike early; ships always-on-top first. (P2)
+- R-04 Hotkey conflicts → clear error reporting in UI + doctor; rebind. (P2,P4)
+- R-05 Mixed-DPI/multi-monitor → physical px + monitor id; re-validate on show. (P2)
+- R-06 WebGL transparency perf → benchmark early; canvas fallback. (P1,P3)
+- R-07 AV false positives → sign binaries before release. (post-MVP)
+- R-08 `open` fuzzy wrong app → prefer exact/alias; picker on ambiguity. (P4-08)
+- R-09 `open` stale index → daily refresh + --reindex + fallback re-scan. (post-MVP)
+- R-10 UWP inconsistencies (--new/--wait/args) → document + report warnings. (post-MVP)
+- R-11 Arg injection → no shell; one tested quoting fn; fuzz. (P4-08)
+- R-12 Slow first scan → background + partial results + cache. (post-MVP)
+- R-13 Alias shadows tool → default `k`; shadow check in doctor. (P4-10)
+- R-14 Env inheritance to terminals launched inside Rakuten → session guard validates RAKUTEN_SESSION. (P4-10)
+- R-15 Hardlinks fail → copy fallback + rebuild on version change. (P4-10)
+- R-16 Stale shim after update → version-check + refresh on startup. (P4-10)
+- R-17 WSL interop disabled → doctor reports; skip alias for that profile. (post-MVP)
